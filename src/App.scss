@@ -1,53 +1,49 @@
+
+
+
 .siteWrapper {
-  width: 80vw;
-  height: 80vh;
-  background: #191c29 url(/gradientBG.png);
-  background-size: cover;
-  border-radius: 6px;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  font-size: 1.5em;
+  font-size: 1rem;
   cursor: pointer;
-  padding: 2em;
+  margin-bottom: 5rem;
   font-family: 'Roboto', sans-serif;
-  color: #ff6ce8;
+  color: #b1b8e5;
   position: relative;
+  padding: 5em 1rem 1rem;
+  max-width: 1600px;
 
-  ::before {
-    content: "";
-    width: 102%;
-    height: 104%;
-    border-radius: 8px;
-    background-image: linear-gradient(132deg, #5ddcff, #3c67e3 43%, #4e00c2);
-    position: absolute;
-    z-index: -1;
-    top: -2%;
-    left: -1%;
-    animation: spin 2.5s linear infinite;
-    filter: blur(100%);
+  @media (min-width: 768px) {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
+
+
 
   h1 {
     font-family: Bebas Neue;
     background: #A0F2FF;
-    background: linear-gradient(179deg, #6cd6fc 40%, #6c269b 90%);
+    background: linear-gradient(179deg, #6cd6fc 10%, #6c269b 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 0;
     margin: 0;
-    line-height: 0.8em;
+    line-height: 2rem;
+    font-size: 2.5rem;
   }
 
   h3 {
     font-family: Bebas Neue;
     background: #A0F2FF;
-    background: linear-gradient(179deg, #6cd6fc 40%, #6c269b 90%);
+    background: linear-gradient(179deg, #aee1fa 10%, #6c269b 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 0;
     margin: 0;
+    font-size: 1.5rem;
   }
 
   p {
@@ -56,106 +52,7 @@
   }
 
   button {
-    margin-top: 1em;
-    background: linear-gradient(90deg, #cc6dfd 5%, #6cd6fc 60%);
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 1em;
-    width: 150px;
-    font-size: 0.8em;
-    color: #cff7ff;
+    margin-top: 1rem;
+    background-color: #9d6af5;
   }
-
-  .introContent {
-    .wrapper {
-      position: relative;
-      width: 1000px;
-    }
-
-    .title {
-    }
-
-    .intro {
-      margin-top: 1em;
-      font-size: 0.8em;
-    }
-  }
-
-  .features {
-    margin-top: 3em;
-    display: flex;
-    flex-direction: row;
-    font-size: 0.75em;
-    gap: 4em;
-
-    .feature {
-      width: 300px;
-
-      .heading {
-        background: linear-gradient(179deg, #6cd6fc 40%, #6c269b 90%);
-        font-size: 1.2em;
-        font-weight: bold;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-    }
-  }
-
-  .team {
-    color: #7e85a7;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 1050px;
-    margin-top: 3em;
-    gap: 2em;
-    flex-wrap: wrap;
-
-    .member {
-      padding: 1em;
-      background: #3e4774;
-      border-radius: 0.5em;
-      box-shadow: 0 0 20px 0 #2d2d2d;
-      display: flex;
-      flex-direction: column;
-      width: 450px;
-
-
-      .container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        .avatar {
-          margin-right: 1em;
-
-          img {
-            border: none;
-            border-radius: 50%;
-            width: 64px;
-            height: 64px;
-          }
-        }
-
-        .intro {
-          color: #b6b9ce;
-
-          .name {
-            font-size: 1em;
-          }
-
-          .title {
-            font-size: 0.7em;
-          }
-        }
-      }
-
-      .description {
-        margin-top: 0.5em;
-        font-size: 0.7em;
-      }
-
-    }
-  }
-
 }

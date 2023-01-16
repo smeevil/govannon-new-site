@@ -1,0 +1,55 @@
+@import '../../mixins.scss';
+
+.team {
+  margin-top: 3rem;
+  color: #b1b8e5;
+
+  .member {
+    padding: 0.5rem;
+
+
+    .memberWrapper {
+
+      padding: 1rem;
+      background: #3e4774;
+      border-radius: 0.5rem;
+      height: 100%;
+      @include glass;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .avatar {
+        margin-right: 1rem;
+
+        img {
+          border: none;
+          border-radius: 50%;
+          width: 64px;
+          height: 64px;
+        }
+      }
+
+      .intro {
+        color: #ea66f3;
+
+        .name {
+          font-size: 1.2rem;
+        }
+
+        .title {
+          color: deepskyblue;
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .description {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+}

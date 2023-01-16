@@ -1,0 +1,8 @@
+@mixin glass {
+  -webkit-backdrop-filter: blur(24px); /* Safari 9+ */
+  backdrop-filter: blur(24px); /* Chrome and Opera */
+  background: rgba(62, 71, 116, 0.26);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 0.5rem;
+}
