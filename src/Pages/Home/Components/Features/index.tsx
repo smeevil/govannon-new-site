@@ -1,11 +1,12 @@
-import './styles.scss'
+import Styles from './styles.module.scss'
+import {FC} from 'react'
 
-export const Features: React.FC = (): JSX.Element => (
-  <div className={'features'}>
+export const Features: FC = (): JSX.Element => (
+  <div className={Styles.features}>
     <h3>How can we help?</h3>
     <div className="flex one two-800 three-1000 center">
-      <div className="featureWrapper">
-        <div className="feature">
+      <div className={Styles.featureWrapper}>
+        <div className={"glassPanel equalHeight"}>
           <h3>Senior Developers</h3>
           <p>
             Our team of experienced senior developers provides expert software development services, ensuring that
@@ -14,8 +15,8 @@ export const Features: React.FC = (): JSX.Element => (
           </p>
         </div>
       </div>
-      <div className="featureWrapper">
-        <div className="feature">
+      <div className={Styles.featureWrapper}>
+        <div className={"glassPanel equalHeight"}>
           <h3>Infrastructure Specialists</h3>
           <p>
             Our infrastructure specialists have the knowledge and expertise to design and implement robust and
@@ -24,8 +25,8 @@ export const Features: React.FC = (): JSX.Element => (
           </p>
         </div>
       </div>
-      <div className="featureWrapper">
-        <div className="feature">
+      <div className={Styles.featureWrapper}>
+        <div className={"glassPanel equalHeight"}>
           <h3>Technology Consultancy</h3>
           <p>
             We provide advice on the latest technologies and best practices. Our team will help you make informed

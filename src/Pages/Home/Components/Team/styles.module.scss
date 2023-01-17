@@ -1,4 +1,4 @@
-@import '../../mixins.scss';
+@import '../../../../mixins';
 
 .team {
   margin-top: 3rem;
@@ -7,15 +7,6 @@
   .member {
     padding: 0.5rem;
 
-
-    .memberWrapper {
-
-      padding: 1rem;
-      background: #3e4774;
-      border-radius: 0.5rem;
-      height: 100%;
-      @include glass;
-    }
 
     .container {
       display: flex;
@@ -45,11 +36,6 @@
           font-size: 1.1rem;
         }
       }
-    }
-
-    .description {
-      margin-top: 0.5rem;
-      font-size: 1rem;
     }
   }
 }

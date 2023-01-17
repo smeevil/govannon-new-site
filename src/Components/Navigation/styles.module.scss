@@ -1,6 +1,6 @@
 @import '../../mixins.scss';
 
-nav {
+.nav {
   background: linear-gradient(180deg, #6c269b 75%, #271831 95%);
   color: #6cd6fc;
   font-size: 1rem;
@@ -8,11 +8,6 @@ nav {
   padding-right: 1rem;
 
   @include glass;
-
-  @media (min-width: 768px) {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
 
   a {
     color: #6cd6fc;
