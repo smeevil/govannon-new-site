@@ -23,4 +23,3 @@ export const Navigation: React.FC = (): JSX.Element => {
     </nav>
   );
 };
-a
