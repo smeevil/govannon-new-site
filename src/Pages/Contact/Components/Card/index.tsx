@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import Styles from "./Styles.module.scss";
+import Styles from "./styles.module.scss";
 
 interface ICardProps {
   name: string;
