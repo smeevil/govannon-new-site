@@ -34,7 +34,7 @@ export const Contact: FC = (): JSX.Element => (
           name={"Gerard de Brieder"}
           imagePath={"/team/brieder.jpeg"}
           website={"https://govannon.nl"}
-          linkedIn={"https://www.linkedin.com/in/smeevilra"}
+          linkedIn={"https://www.linkedin.com/in/smeevil"}
           email={"info@govannon.nl"}
           phone={"+31624963568"}
         />

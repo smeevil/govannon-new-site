@@ -5,7 +5,7 @@ import { TeamMember } from "../TeamMember";
 export const Team: React.FC = (): JSX.Element => (
   <div className={Styles.team}>
     <h3>The team</h3>
-    <div className="flex one two-1000 three-1600 center">
+    <div className="flex one two-1200 three-1600 center">
       <TeamMember
         name={"Gerard de Brieder"}
         title={"Rapid proto-typer and Software Architect"}
