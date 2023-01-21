@@ -30,6 +30,7 @@ export const Contact: FC = (): JSX.Element => (
         </div>
       </div>
       <div className="flex  one two-1000 three-1600 center">
+        {/*<div className="flex">*/}
         <Card
           name={"Gerard de Brieder"}
           imagePath={"/team/brieder.jpeg"}

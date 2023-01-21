@@ -1,5 +1,5 @@
 import Styles from "./styles.module.scss";
-import { Link, useNavigation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import React from "react";
 
 export const Navigation: React.FC = (): JSX.Element => {
@@ -13,12 +13,27 @@ export const Navigation: React.FC = (): JSX.Element => {
         &#8801;
       </label>
 
-      <div className="menu">
-        <Link to="/">🏠Home</Link>
-        <Link to="/developers">💻Developers</Link>
-        <Link to="/infra">☁️Infra</Link>
-        <Link to="/consultancy">🏢Consultancy</Link>
-        <Link to="/contact">📞Contact</Link>
+      <div className={`menu ${Styles.navItems}`}>
+        <Link to="/">
+          <img alt="home" src={"/icons/home-icon.png"} />
+          <span>Home</span>
+        </Link>
+        <Link to="/developers">
+          <img alt="code" src={"/icons/code-icon.png"} />
+          <span>Developers</span>
+        </Link>
+        <Link to="/infra">
+          <img alt="cloud" src={"/icons/cloud-icon.png"} />
+          <span>Infra</span>
+        </Link>
+        <Link to="/consultancy">
+          <img alt="consultancy" src={"/icons/consultancy-icon.png"} />
+          <span>Consultancy</span>
+        </Link>
+        <Link to="/contact">
+          <img alt="contact" src={"/icons/contact-icon.png"} />
+          <span>Contact</span>
+        </Link>
       </div>
     </nav>
   );

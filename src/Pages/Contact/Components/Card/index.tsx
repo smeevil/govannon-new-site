@@ -21,12 +21,28 @@ export const Card: FC<ICardProps> = ({
 }): JSX.Element => (
   <div className={Styles.card}>
     <div className={Styles.wrapper}>
-      <h3>{name}</h3>
-      <img src={imagePath} alt={name} />
-      <p>{email}</p>
-      <p>{phone}</p>
-      <p>{website}</p>
-      <p>{linkedIn}</p>
+      <div className={Styles.intro}>
+        <h3>{name}</h3>
+        <img src={imagePath} alt={name} />
+      </div>
+      <div className={Styles.contactInfo}>
+        <div className={Styles.link}>
+          <img alt={"email"} src={"/icons/email-icon.png"} />
+          <a href={`mailto:${email}`}>{email}</a>
+        </div>
+        <div className={Styles.link}>
+          <img alt={"phone"} src={"/icons/phone-icon.png"} />
+          <a href={`tel:${phone}`}>{phone}</a>
+        </div>
+        <div className={Styles.link}>
+          <img alt={"website"} src={"/icons/world-icon.png"} />
+          <a href={website}>{website}</a>
+        </div>
+        <div className={Styles.link}>
+          <img alt={"linkedin"} src={"/icons/linkedin-icon.png"} />
+          <a href={linkedIn}>LinkedIn</a>
+        </div>
+      </div>
     </div>
   </div>
 );
