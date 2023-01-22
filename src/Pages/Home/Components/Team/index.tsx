@@ -4,7 +4,7 @@ import { TeamMember } from "../TeamMember";
 
 export const Team: React.FC = (): JSX.Element => (
   <div className={Styles.team}>
-    <h3>The team</h3>
+    <h2>The team</h2>
     <div className="flex one two-1200 three-1600 center">
       <TeamMember
         name={"Gerard de Brieder"}
@@ -18,7 +18,7 @@ export const Team: React.FC = (): JSX.Element => (
 
       <TeamMember
         name={"Rachid Al Maach"}
-        title={"Software Engineer and SSO"}
+        title={"Software Engineer and SSO Specialist"}
         imagePath={"/team/rachid.jpeg"}
       >
         Rachid develops software utilizing several development methodologies and
@@ -39,8 +39,8 @@ export const Team: React.FC = (): JSX.Element => (
         reviews.
       </TeamMember>
       <TeamMember
-        name={"Mark"}
-        title={"Senior Developer"}
+        name={"Mark Kampstra"}
+        title={"Cloud Engineer and Developer"}
         imagePath={"/team/kampstra.jpeg"}
       >
         Mark designs, implements and maintains cloud-based solutions to align

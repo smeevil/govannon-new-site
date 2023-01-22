@@ -11,13 +11,13 @@ body {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(140deg, #af5ae2 0%, #2b1a58 30%, #0e183c 80%);
+  background: linear-gradient(110deg, #af5ae2 0%, #2b1a58 30%, #0e183c 80%);
 }
 
 h1 {
   font-family: Bebas Neue, serif;
-  background: #A0F2FF;
-  background: linear-gradient(179deg, #6cd6fc 10%, #6c269b 90%);
+  background: #6cd6fc;
+  //background: linear-gradient(179deg, #6cd6fc 10%, #6c269b 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0;
@@ -26,10 +26,23 @@ h1 {
   font-size: 2.5rem;
 }
 
+h2 {
+  font-family: Bebas Neue, sans-serif;
+  background: #6cd6fc;
+  //background: linear-gradient(179deg, #cdeaf8 10%, #6c269b 90%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 1.75rem;
+}
+
 h3 {
   font-family: Bebas Neue, sans-serif;
-  background: #A0F2FF;
-  background: linear-gradient(179deg, #aee1fa 10%, #6c269b 90%);
+  background: #c0a0ff;
+  //background: linear-gradient(179deg, #cdeaf8 10%, #6c269b 90%);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0;
@@ -42,10 +55,6 @@ p {
   margin-bottom: 1em;
 }
 
-button {
-  margin-top: 1rem;
-  background-color: #9d6af5;
-}
 
 .bg {
   width: 100%;
@@ -65,7 +74,6 @@ button {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
-  cursor: pointer;
   margin-bottom: 5rem;
   font-family: 'Roboto', sans-serif;
   color: #b1b8e5;
@@ -118,11 +126,20 @@ button {
 }
 
 nav .brand {
+  display: flex;
+  flex-direction: row !important;
   font-size: 3em;
   margin-left: 0.5em;
+  position: relative;
   @media (max-width: 60em) {
     margin-left: -1em;
     font-size: 1.2em;
+  }
+
+  img{
+    position: relative;
+    top: -0.2em;
+    margin-right: 0.05em;
   }
 }
 

@@ -5,7 +5,7 @@ import Styles from "./styles.module.scss";
 interface ICardProps {
   name: string;
   imagePath: string;
-  website: string;
+  website?: string;
   linkedIn: string;
   email: string;
   phone: string;
@@ -34,10 +34,12 @@ export const Card: FC<ICardProps> = ({
           <img alt={"phone"} src={"/icons/phone-icon.png"} />
           <a href={`tel:${phone}`}>{phone}</a>
         </div>
-        <div className={Styles.link}>
-          <img alt={"website"} src={"/icons/world-icon.png"} />
-          <a href={website}>{website}</a>
-        </div>
+        {website && (
+          <div className={Styles.link}>
+            <img alt={"website"} src={"/icons/world-icon.png"} />
+            <a href={website}>{website}</a>
+          </div>
+        )}
         <div className={Styles.link}>
           <img alt={"linkedin"} src={"/icons/linkedin-icon.png"} />
           <a href={linkedIn}>LinkedIn</a>

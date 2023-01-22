@@ -1,0 +1,24 @@
+.panelWrapper {
+  padding: 0.5rem;
+  @media (max-width: 60em) {
+    h3 {
+      text-align: center;
+    }
+  }
+}
+
+.iconAndText {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-direction: row;
+
+  @media (max-width: 60em) {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  img {
+    margin-right: 2rem;
+  }
+}

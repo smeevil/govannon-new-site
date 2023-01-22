@@ -7,7 +7,6 @@
   .member {
     padding: 0.5rem;
 
-
     .container {
       display: flex;
       flex-direction: row;
@@ -36,6 +35,10 @@
           font-size: 1.1rem;
         }
       }
+    }
+
+    .description {
+      margin-top: 1rem;
     }
   }
 }

@@ -1,1 +1,15 @@
 @import '../../../../mixins';
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+
+  .button {
+    margin-top: 1rem;
+    background-color: #9d6af5;
+    border-radius: 0.5em;
+    color: #e3d6fa;
+    padding: 0.5em 1em;
+    margin-right: 1em;
+  }
+}

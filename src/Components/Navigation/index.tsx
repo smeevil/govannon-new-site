@@ -6,7 +6,8 @@ export const Navigation: React.FC = (): JSX.Element => {
   return (
     <nav className={Styles.nav}>
       <Link className="brand" to="/">
-        Govannon
+        <img alt="logo" src={"/icons/G.png"} />
+        ovannon
       </Link>
       <input id="bmenub" type="checkbox" className="show" />
       <label htmlFor="bmenub" className="burger pseudo button">
