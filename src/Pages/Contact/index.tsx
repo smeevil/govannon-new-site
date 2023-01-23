@@ -42,7 +42,7 @@ export const Contact: FC = (): JSX.Element => (
           website={"https://qraft.nl"}
           linkedIn={"https://www.linkedin.com/in/rachidalmaach/"}
           email={"info@qraft.com"}
-          phone={"+31624963568"}
+          phone={"+31631966790"}
         />
         <Card
           name={"Christiaan van Bemmel"}
@@ -50,7 +50,6 @@ export const Contact: FC = (): JSX.Element => (
           website={"https://www.bemmel.nu"}
           linkedIn={"https://www.linkedin.com/in/christiaanvanbemmel/"}
           email={"info@bemmel.dev"}
-          phone={"+31624963568"}
         />
         <Card
           name={"Mark Kampstra"}
@@ -58,7 +57,6 @@ export const Contact: FC = (): JSX.Element => (
           website={"https://markkampstra.nl"}
           linkedIn={"https://www.linkedin.com/in/markkampstra/"}
           email={"mark@kampstra.nl"}
-          phone={"+31624963568"}
         />
         <Card
           name={"Wes Oldenbeuving"}
@@ -66,14 +64,12 @@ export const Contact: FC = (): JSX.Element => (
           website={"https://narnach.nl"}
           linkedIn={"https://www.linkedin.com/in/wesoldenbeuving/"}
           email={"info@narnach.nl"}
-          phone={"+31624963568"}
         />
         <Card
           name={"Yassine Benhadi"}
           imagePath={"/team/yassine.jpeg"}
           linkedIn={"https://www.linkedin.com/in/yassine-benhadi/"}
           email={"yassine@benhadi.com"}
-          phone={"+31624963568"}
         />
       </div>
     </div>

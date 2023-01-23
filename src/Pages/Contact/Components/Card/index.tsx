@@ -8,7 +8,7 @@ interface ICardProps {
   website?: string;
   linkedIn: string;
   email: string;
-  phone: string;
+  phone?: string;
 }
 
 export const Card: FC<ICardProps> = ({
@@ -30,10 +30,12 @@ export const Card: FC<ICardProps> = ({
           <img alt={"email"} src={"/icons/email-icon.png"} />
           <a href={`mailto:${email}`}>{email}</a>
         </div>
-        <div className={Styles.link}>
-          <img alt={"phone"} src={"/icons/phone-icon.png"} />
-          <a href={`tel:${phone}`}>{phone}</a>
-        </div>
+        {phone && (
+          <div className={Styles.link}>
+            <img alt={"phone"} src={"/icons/phone-icon.png"} />
+            <a href={`tel:${phone}`}>{phone}</a>
+          </div>
+        )}
         {website && (
           <div className={Styles.link}>
             <img alt={"website"} src={"/icons/world-icon.png"} />
